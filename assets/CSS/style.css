@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 背景の色を ghostwhite で */
+body {
+    background-color: ghostwhite;
+
+}
+
+/* 横幅を1000pxに */
+.wrapper {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+/* 文字の色を lightseagreen で */
+h1, h2 {
+    color: lightseagreen;
+    text-align: center;
+    margin: 20px 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* 内側下余白が40px、外側下余白が40px、下線を1px solid lightseagreen にする */
+p {
+    text-align: center;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid lightseagreen;
+}
+
+/* フレックスコンテナーにして、余白を端から端まで均等に並べる */
+ul {
+    display: flex;
+    justify-content: space-around;
+    /* betweenが正解でした〇 */
+}
+
+li {
+    /* ↓ デフォルトで付いているリストの「・」を消すためのプロパティです */
+    list-style: none;
+}
+
+/* ↓ li の中の a タグ、という指定 */
+li a {
+    text-align: center;
+    display:block;
+    /* ↓ aタグに付いているデフォルトの文字色や下線などを消すためのプロパティです */
+    text-decoration: none;
+
+    /* 幅 150px、文字色 white、背景色 lightgray、内側上下の余白20px */
+    width: 150px;
+    color: #fff;
+    background-color: lightgray;
+    padding:20px 0;
+
+
+    /* さらに、文字を太くする（プロパティは調べる！） & 角を10px丸くする */
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    /* 文字のサイズを12px、内側上下余白20px、外側上余白40px、上線を1px solid lightseagreen にする */
+    font-size: 12px;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid lightseagreen;
+}
